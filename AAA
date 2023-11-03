@@ -2408,7 +2408,651 @@ if game.PlaceId == 2753915549 then
             end
         end
     end
-
+    function CheckMonPos() 
+        MyLevel = game:GetService("Players").LocalPlayer.Data.Level.Value
+        if World1 then
+            if MyLevel == 1 or MyLevel <= 9 then
+                Mon = "Bandit"
+                LevelQuest = 1
+                NameQuest = "BanditQuest1"
+                NameMon = "Bandit"
+                CFrameCheck1 = CFrame.new(961.016174, 21.4518547, 1556.84778, 0.262135684, 6.16381541e-08, 0.965031028, 8.2218774e-09, 1, -6.61050308e-08, -0.965031028, 2.52628531e-08, 0.262135684)
+                CFrameCheck2 = CFrame.new(1319.30444, 33.9027443, 1536.72302, 0.303338945, -2.06791668e-08, -0.952882707, -4.90276193e-08, 1, -3.73090536e-08, 0.952882707, 5.80348605e-08, 0.303338945)
+                CFrameCheck3 = CFrame.new(1220.22559, 34.1919937, 1613.08362, -0.361424297, -1.60337592e-08, 0.932401478, -3.67291513e-08, 1, 2.95897418e-09, -0.932401478, -3.31768675e-08, -0.361424297)
+                CFrameCheck4 = CFrame.new(961.016174, 21.4518547, 1556.84778, 0.262135684, 6.16381541e-08, 0.965031028, 8.2218774e-09, 1, -6.61050308e-08, -0.965031028, 2.52628531e-08, 0.262135684)
+            elseif MyLevel == 10 or MyLevel <= 14 then
+                Mon = "Monkey"
+                LevelQuest = 1
+                NameQuest = "JungleQuest"
+                NameMon = "Monkey"
+                CFrameCheck1 = CFrame.new()
+                CFrameCheck2 = CFrame.new()
+                CFrameCheck3 = CFrame.new()
+                CFrameCheck4 = CFrame.new()
+            elseif MyLevel == 15 or MyLevel <= 29 then
+                Mon = "Gorilla"
+                LevelQuest = 2
+                NameQuest = "JungleQuest"
+                NameMon = "Gorilla"
+                CFrameCheck1 = CFrame.new()
+                CFrameCheck2 = CFrame.new()
+                CFrameCheck3 = CFrame.new()
+                CFrameCheck4 = CFrame.new()
+            elseif MyLevel == 30 or MyLevel <= 39 then
+                Mon = "Pirate"
+                LevelQuest = 1
+                NameQuest = "BuggyQuest1"
+                NameMon = "Pirate"
+                CFrameCheck1 = CFrame.new()
+                CFrameCheck2 = CFrame.new()
+                CFrameCheck3 = CFrame.new()
+                CFrameCheck4 = CFrame.new()
+            elseif MyLevel == 40 or MyLevel <= 59 then
+                Mon = "Brute"
+                LevelQuest = 2
+                NameQuest = "BuggyQuest1"
+                NameMon = "Brute"
+                CFrameCheck1 = CFrame.new()
+                CFrameCheck2 = CFrame.new()
+                CFrameCheck3 = CFrame.new()
+                CFrameCheck4 = CFrame.new()
+            elseif MyLevel == 60 or MyLevel <= 74 then
+                Mon = "Desert Bandit"
+                LevelQuest = 1
+                NameQuest = "DesertQuest"
+                NameMon = "Desert Bandit"
+                CFrameCheck1 = CFrame.new()
+                CFrameCheck2 = CFrame.new()
+                CFrameCheck3 = CFrame.new()
+                CFrameCheck4 = CFrame.new()
+            elseif MyLevel == 75 or MyLevel <= 89 then
+                Mon = "Desert Officer"
+                LevelQuest = 2
+                NameQuest = "DesertQuest"
+                NameMon = "Desert Officer"
+                CFrameCheck1 = CFrame.new()
+                CFrameCheck2 = CFrame.new()
+                CFrameCheck3 = CFrame.new()
+                CFrameCheck4 = CFrame.new()
+            elseif MyLevel == 90 or MyLevel <= 99 then
+                Mon = "Snow Bandit"
+                LevelQuest = 1
+                NameQuest = "SnowQuest"
+                NameMon = "Snow Bandit"
+                CFrameCheck1 = CFrame.new()
+                CFrameCheck2 = CFrame.new()
+                CFrameCheck3 = CFrame.new()
+                CFrameCheck4 = CFrame.new()
+            elseif MyLevel == 100 or MyLevel <= 119 then
+                Mon = "Snowman"
+                LevelQuest = 2
+                NameQuest = "SnowQuest"
+                NameMon = "Snowman"
+                CFrameCheck1 = CFrame.new()
+                CFrameCheck2 = CFrame.new()
+                CFrameCheck3 = CFrame.new()
+                CFrameCheck4 = CFrame.new()
+            elseif MyLevel == 120 or MyLevel <= 149 then
+                Mon = "Chief Petty Officer"
+                LevelQuest = 1
+                NameQuest = "MarineQuest2"
+                NameMon = "Chief Petty Officer"
+                CFrameCheck1 = CFrame.new()
+                CFrameCheck2 = CFrame.new()
+                CFrameCheck3 = CFrame.new()
+                CFrameCheck4 = CFrame.new()
+            elseif MyLevel == 150 or MyLevel <= 174 then
+                Mon = "Sky Bandit"
+                LevelQuest = 1
+                NameQuest = "SkyQuest"
+                NameMon = "Sky Bandit"
+                CFrameQuest = CFrame.new(-4839.53027, 716.368591, -2619.44165, 0.866007268, 0, 0.500031412, 0, 1, 0, -0.500031412, 0, 0.866007268)
+                CFrameMon = CFrame.new(-4953.20703125, 295.74420166015625, -2899.22900390625)
+            elseif MyLevel == 175 or MyLevel <= 189 then
+                Mon = "Dark Master"
+                LevelQuest = 2
+                NameQuest = "SkyQuest"
+                NameMon = "Dark Master"
+                CFrameQuest = CFrame.new(-4839.53027, 716.368591, -2619.44165, 0.866007268, 0, 0.500031412, 0, 1, 0, -0.500031412, 0, 0.866007268)
+                CFrameMon = CFrame.new(-5259.8447265625, 391.3976745605469, -2229.035400390625)
+            elseif MyLevel == 190 or MyLevel <= 209 then
+                Mon = "Prisoner"
+                LevelQuest = 1
+                NameQuest = "PrisonerQuest"
+                NameMon = "Prisoner"
+                CFrameQuest = CFrame.new(5308.93115, 1.65517521, 475.120514, -0.0894274712, -5.00292918e-09, -0.995993316, 1.60817859e-09, 1, -5.16744869e-09, 0.995993316, -2.06384709e-09, -0.0894274712)
+                CFrameMon = CFrame.new(5098.9736328125, -0.3204058110713959, 474.2373352050781)
+            elseif MyLevel == 210 or MyLevel <= 249 then
+                Mon = "Dangerous Prisoner"
+                LevelQuest = 2
+                NameQuest = "PrisonerQuest"
+                NameMon = "Dangerous Prisoner"
+                CFrameQuest = CFrame.new(5308.93115, 1.65517521, 475.120514, -0.0894274712, -5.00292918e-09, -0.995993316, 1.60817859e-09, 1, -5.16744869e-09, 0.995993316, -2.06384709e-09, -0.0894274712)
+                CFrameMon = CFrame.new(5654.5634765625, 15.633401870727539, 866.2991943359375)
+            elseif MyLevel == 250 or MyLevel <= 274 then
+                Mon = "Toga Warrior"
+                LevelQuest = 1
+                NameQuest = "ColosseumQuest"
+                NameMon = "Toga Warrior"
+                CFrameQuest = CFrame.new(-1580.04663, 6.35000277, -2986.47534, -0.515037298, 0, -0.857167721, 0, 1, 0, 0.857167721, 0, -0.515037298)
+                CFrameMon = CFrame.new(-1820.21484375, 51.68385696411133, -2740.6650390625)
+            elseif MyLevel == 275 or MyLevel <= 299 then
+                Mon = "Gladiator"
+                LevelQuest = 2
+                NameQuest = "ColosseumQuest"
+                NameMon = "Gladiator"
+                CFrameQuest = CFrame.new(-1580.04663, 6.35000277, -2986.47534, -0.515037298, 0, -0.857167721, 0, 1, 0, 0.857167721, 0, -0.515037298)
+                CFrameMon = CFrame.new(-1292.838134765625, 56.380882263183594, -3339.031494140625)
+            elseif MyLevel == 300 or MyLevel <= 324 then
+                Mon = "Military Soldier"
+                LevelQuest = 1
+                NameQuest = "MagmaQuest"
+                NameMon = "Military Soldier"
+                CFrameQuest = CFrame.new(-5313.37012, 10.9500084, 8515.29395, -0.499959469, 0, 0.866048813, 0, 1, 0, -0.866048813, 0, -0.499959469)
+                CFrameMon = CFrame.new(-5411.16455078125, 11.081554412841797, 8454.29296875)
+            elseif MyLevel == 325 or MyLevel <= 374 then
+                Mon = "Military Spy"
+                LevelQuest = 2
+                NameQuest = "MagmaQuest"
+                NameMon = "Military Spy"
+                CFrameQuest = CFrame.new(-5313.37012, 10.9500084, 8515.29395, -0.499959469, 0, 0.866048813, 0, 1, 0, -0.866048813, 0, -0.499959469)
+                CFrameMon = CFrame.new(-5802.8681640625, 86.26241302490234, 8828.859375)
+            elseif MyLevel == 375 or MyLevel <= 399 then
+                Mon = "Fishman Warrior"
+                LevelQuest = 1
+                NameQuest = "FishmanQuest"
+                NameMon = "Fishman Warrior"
+                CFrameQuest = CFrame.new(61122.65234375, 18.497442245483, 1569.3997802734)
+                CFrameMon = CFrame.new(60878.30078125, 18.482830047607422, 1543.7574462890625)
+                if _G.AutoFarm and (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 10000 then
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
+                end
+            elseif MyLevel == 400 or MyLevel <= 449 then
+                Mon = "Fishman Commando"
+                LevelQuest = 2
+                NameQuest = "FishmanQuest"
+                NameMon = "Fishman Commando"
+                CFrameQuest = CFrame.new(61122.65234375, 18.497442245483, 1569.3997802734)
+                CFrameMon = CFrame.new(61922.6328125, 18.482830047607422, 1493.934326171875)
+                if _G.AutoFarm and (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 10000 then
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
+                end
+            elseif MyLevel == 450 or MyLevel <= 474 then
+                Mon = "God's Guard"
+                LevelQuest = 1
+                NameQuest = "SkyExp1Quest"
+                NameMon = "God's Guard"
+                CFrameQuest = CFrame.new(-4721.88867, 843.874695, -1949.96643, 0.996191859, -0, -0.0871884301, 0, 1, -0, 0.0871884301, 0, 0.996191859)
+                CFrameMon = CFrame.new(-4710.04296875, 845.2769775390625, -1927.3079833984375)
+                if _G.AutoFarm and (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 10000 then
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-4607.82275, 872.54248, -1667.55688))
+                end
+            elseif MyLevel == 475 or MyLevel <= 524 then
+                Mon = "Shanda"
+                LevelQuest = 2
+                NameQuest = "SkyExp1Quest"
+                NameMon = "Shanda"
+                CFrameQuest = CFrame.new(-7859.09814, 5544.19043, -381.476196, -0.422592998, 0, 0.906319618, 0, 1, 0, -0.906319618, 0, -0.422592998)
+                CFrameMon = CFrame.new(-7678.48974609375, 5566.40380859375, -497.2156066894531)
+                if _G.AutoFarm and (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 10000 then
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-7894.6176757813, 5547.1416015625, -380.29119873047))
+                end
+            elseif MyLevel == 525 or MyLevel <= 549 then
+                Mon = "Royal Squad"
+                LevelQuest = 1
+                NameQuest = "SkyExp2Quest"
+                NameMon = "Royal Squad"
+                CFrameQuest = CFrame.new(-7906.81592, 5634.6626, -1411.99194, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+                CFrameMon = CFrame.new(-7624.25244140625, 5658.13330078125, -1467.354248046875)
+            elseif MyLevel == 550 or MyLevel <= 624 then
+                Mon = "Royal Soldier"
+                LevelQuest = 2
+                NameQuest = "SkyExp2Quest"
+                NameMon = "Royal Soldier"
+                CFrameQuest = CFrame.new(-7906.81592, 5634.6626, -1411.99194, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+                CFrameMon = CFrame.new(-7836.75341796875, 5645.6640625, -1790.6236572265625)
+            elseif MyLevel == 625 or MyLevel <= 649 then
+                Mon = "Galley Pirate"
+                LevelQuest = 1
+                NameQuest = "FountainQuest"
+                NameMon = "Galley Pirate"
+                CFrameQuest = CFrame.new(5259.81982, 37.3500175, 4050.0293, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
+                CFrameMon = CFrame.new(5551.02197265625, 78.90135192871094, 3930.412841796875)
+            elseif MyLevel >= 650 then
+                Mon = "Galley Captain"
+                LevelQuest = 2
+                NameQuest = "FountainQuest"
+                NameMon = "Galley Captain"
+                CFrameQuest = CFrame.new(5259.81982, 37.3500175, 4050.0293, 0.087131381, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, 0.087131381)
+                CFrameMon = CFrame.new(5441.95166015625, 42.50205993652344, 4950.09375)
+            end
+        elseif World2 then
+            if MyLevel == 700 or MyLevel <= 724 then
+                Mon = "Raider"
+                LevelQuest = 1
+                NameQuest = "Area1Quest"
+                NameMon = "Raider"
+                CFrameQuest = CFrame.new(-429.543518, 71.7699966, 1836.18188, -0.22495985, 0, -0.974368095, 0, 1, 0, 0.974368095, 0, -0.22495985)
+                CFrameMon = CFrame.new(-728.3267211914062, 52.779319763183594, 2345.7705078125)
+            elseif MyLevel == 725 or MyLevel <= 774 then
+                Mon = "Mercenary"
+                LevelQuest = 2
+                NameQuest = "Area1Quest"
+                NameMon = "Mercenary"
+                CFrameQuest = CFrame.new(-429.543518, 71.7699966, 1836.18188, -0.22495985, 0, -0.974368095, 0, 1, 0, 0.974368095, 0, -0.22495985)
+                CFrameMon = CFrame.new(-1004.3244018554688, 80.15886688232422, 1424.619384765625)
+            elseif MyLevel == 775 or MyLevel <= 799 then
+                Mon = "Swan Pirate"
+                LevelQuest = 1
+                NameQuest = "Area2Quest"
+                NameMon = "Swan Pirate"
+                CFrameQuest = CFrame.new(638.43811, 71.769989, 918.282898, 0.139203906, 0, 0.99026376, 0, 1, 0, -0.99026376, 0, 0.139203906)
+                CFrameMon = CFrame.new(1068.664306640625, 137.61428833007812, 1322.1060791015625)
+            elseif MyLevel == 800 or MyLevel <= 874 then
+                Mon = "Factory Staff"
+                NameQuest = "Area2Quest"
+                LevelQuest = 2
+                NameMon = "Factory Staff"
+                CFrameQuest = CFrame.new(632.698608, 73.1055908, 918.666321, -0.0319722369, 8.96074881e-10, -0.999488771, 1.36326533e-10, 1, 8.92172336e-10, 0.999488771, -1.07732087e-10, -0.0319722369)
+                CFrameMon = CFrame.new(73.07867431640625, 81.86344146728516, -27.470672607421875)
+            elseif MyLevel == 875 or MyLevel <= 899 then
+                Mon = "Marine Lieutenant"
+                LevelQuest = 1
+                NameQuest = "MarineQuest3"
+                NameMon = "Marine Lieutenant"
+                CFrameQuest = CFrame.new(-2440.79639, 71.7140732, -3216.06812, 0.866007268, 0, 0.500031412, 0, 1, 0, -0.500031412, 0, 0.866007268)
+                CFrameMon = CFrame.new(-2821.372314453125, 75.89727783203125, -3070.089111328125)
+            elseif MyLevel == 900 or MyLevel <= 949 then
+                Mon = "Marine Captain"
+                LevelQuest = 2
+                NameQuest = "MarineQuest3"
+                NameMon = "Marine Captain"
+                CFrameQuest = CFrame.new(-2440.79639, 71.7140732, -3216.06812, 0.866007268, 0, 0.500031412, 0, 1, 0, -0.500031412, 0, 0.866007268)
+                CFrameMon = CFrame.new(-1861.2310791015625, 80.17658233642578, -3254.697509765625)
+            elseif MyLevel == 950 or MyLevel <= 974 then
+                Mon = "Zombie"
+                LevelQuest = 1
+                NameQuest = "ZombieQuest"
+                NameMon = "Zombie"
+                CFrameQuest = CFrame.new(-5497.06152, 47.5923004, -795.237061, -0.29242146, 0, -0.95628953, 0, 1, 0, 0.95628953, 0, -0.29242146)
+                CFrameMon = CFrame.new(-5657.77685546875, 78.96973419189453, -928.68701171875)
+            elseif MyLevel == 975 or MyLevel <= 999 then
+                Mon = "Vampire"
+                LevelQuest = 2
+                NameQuest = "ZombieQuest"
+                NameMon = "Vampire"
+                CFrameQuest = CFrame.new(-5497.06152, 47.5923004, -795.237061, -0.29242146, 0, -0.95628953, 0, 1, 0, 0.95628953, 0, -0.29242146)
+                CFrameMon = CFrame.new(-6037.66796875, 32.18463897705078, -1340.6597900390625)
+            elseif MyLevel == 1000 or MyLevel <= 1049 then
+                Mon = "Snow Trooper"
+                LevelQuest = 1
+                NameQuest = "SnowMountainQuest"
+                NameMon = "Snow Trooper"
+                CFrameQuest = CFrame.new(609.858826, 400.119904, -5372.25928, -0.374604106, 0, 0.92718488, 0, 1, 0, -0.92718488, 0, -0.374604106)
+                CFrameMon = CFrame.new(549.1473388671875, 427.3870544433594, -5563.69873046875)
+            elseif MyLevel == 1050 or MyLevel <= 1099 then
+                Mon = "Winter Warrior"
+                LevelQuest = 2
+                NameQuest = "SnowMountainQuest"
+                NameMon = "Winter Warrior"
+                CFrameQuest = CFrame.new(609.858826, 400.119904, -5372.25928, -0.374604106, 0, 0.92718488, 0, 1, 0, -0.92718488, 0, -0.374604106)
+                CFrameMon = CFrame.new(1142.7451171875, 475.6398010253906, -5199.41650390625)
+            elseif MyLevel == 1100 or MyLevel <= 1124 then
+                Mon = "Lab Subordinate"
+                LevelQuest = 1
+                NameQuest = "IceSideQuest"
+                NameMon = "Lab Subordinate"
+                CFrameQuest = CFrame.new(-6064.06885, 15.2422857, -4902.97852, 0.453972578, -0, -0.891015649, 0, 1, -0, 0.891015649, 0, 0.453972578)
+                CFrameMon = CFrame.new(-5707.4716796875, 15.951709747314453, -4513.39208984375)
+            elseif MyLevel == 1125 or MyLevel <= 1174 then
+                Mon = "Horned Warrior"
+                LevelQuest = 2
+                NameQuest = "IceSideQuest"
+                NameMon = "Horned Warrior"
+                CFrameQuest = CFrame.new(-6064.06885, 15.2422857, -4902.97852, 0.453972578, -0, -0.891015649, 0, 1, -0, 0.891015649, 0, 0.453972578)
+                CFrameMon = CFrame.new(-6341.36669921875, 15.951770782470703, -5723.162109375)
+            elseif MyLevel == 1175 or MyLevel <= 1199 then
+                Mon = "Magma Ninja"
+                LevelQuest = 1
+                NameQuest = "FireSideQuest"
+                NameMon = "Magma Ninja"
+                CFrameQuest = CFrame.new(-5428.03174, 15.0622921, -5299.43457, -0.882952213, 0, 0.469463557, 0, 1, 0, -0.469463557, 0, -0.882952213)
+                CFrameMon = CFrame.new(-5449.6728515625, 76.65874481201172, -5808.20068359375)
+            elseif MyLevel == 1200 or MyLevel <= 1249 then
+                Mon = "Lava Pirate"
+                LevelQuest = 2
+                NameQuest = "FireSideQuest"
+                NameMon = "Lava Pirate"
+                CFrameQuest = CFrame.new(-5428.03174, 15.0622921, -5299.43457, -0.882952213, 0, 0.469463557, 0, 1, 0, -0.469463557, 0, -0.882952213)
+                CFrameMon = CFrame.new(-5213.33154296875, 49.73788070678711, -4701.451171875)
+            elseif MyLevel == 1250 or MyLevel <= 1274 then
+                Mon = "Ship Deckhand"
+                LevelQuest = 1
+                NameQuest = "ShipQuest1"
+                NameMon = "Ship Deckhand"
+                CFrameQuest = CFrame.new(1037.80127, 125.092171, 32911.6016)         
+                CFrameMon = CFrame.new(1212.0111083984375, 150.79205322265625, 33059.24609375)    
+                if _G.AutoFarm and (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 10000 then
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
+                end
+            elseif MyLevel == 1275 or MyLevel <= 1299 then
+                Mon = "Ship Engineer"
+                LevelQuest = 2
+                NameQuest = "ShipQuest1"
+                NameMon = "Ship Engineer"
+                CFrameQuest = CFrame.new(1037.80127, 125.092171, 32911.6016)   
+                CFrameMon = CFrame.new(919.4786376953125, 43.54401397705078, 32779.96875)   
+                if _G.AutoFarm and (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 10000 then
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
+                end             
+            elseif MyLevel == 1300 or MyLevel <= 1324 then
+                Mon = "Ship Steward"
+                LevelQuest = 1
+                NameQuest = "ShipQuest2"
+                NameMon = "Ship Steward"
+                CFrameQuest = CFrame.new(968.80957, 125.092171, 33244.125)         
+                CFrameMon = CFrame.new(919.4385375976562, 129.55599975585938, 33436.03515625)      
+                if _G.AutoFarm and (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 10000 then
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
+                end
+            elseif MyLevel == 1325 or MyLevel <= 1349 then
+                Mon = "Ship Officer"
+                LevelQuest = 2
+                NameQuest = "ShipQuest2"
+                NameMon = "Ship Officer"
+                CFrameQuest = CFrame.new(968.80957, 125.092171, 33244.125)
+                CFrameMon = CFrame.new(1036.0179443359375, 181.4390411376953, 33315.7265625)
+                if _G.AutoFarm and (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 10000 then
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
+                end
+            elseif MyLevel == 1350 or MyLevel <= 1374 then
+                Mon = "Arctic Warrior"
+                LevelQuest = 1
+                NameQuest = "FrostQuest"
+                NameMon = "Arctic Warrior"
+                CFrameQuest = CFrame.new(5667.6582, 26.7997818, -6486.08984, -0.933587909, 0, -0.358349502, 0, 1, 0, 0.358349502, 0, -0.933587909)
+                CFrameMon = CFrame.new(5966.24609375, 62.97002029418945, -6179.3828125)
+                if _G.AutoFarm and (CFrameQuest.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 10000 then
+                    game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-6508.5581054688, 5000.034996032715, -132.83953857422))
+                end
+            elseif MyLevel == 1375 or MyLevel <= 1424 then
+                Mon = "Snow Lurker"
+                LevelQuest = 2
+                NameQuest = "FrostQuest"
+                NameMon = "Snow Lurker"
+                CFrameQuest = CFrame.new(5667.6582, 26.7997818, -6486.08984, -0.933587909, 0, -0.358349502, 0, 1, 0, 0.358349502, 0, -0.933587909)
+                CFrameMon = CFrame.new(5407.07373046875, 69.19437408447266, -6880.88037109375)
+            elseif MyLevel == 1425 or MyLevel <= 1449 then
+                Mon = "Sea Soldier"
+                LevelQuest = 1
+                NameQuest = "ForgottenQuest"
+                NameMon = "Sea Soldier"
+                CFrameQuest = CFrame.new(-3054.44458, 235.544281, -10142.8193, 0.990270376, -0, -0.13915664, 0, 1, -0, 0.13915664, 0, 0.990270376)
+                CFrameMon = CFrame.new(-3028.2236328125, 64.67451477050781, -9775.4267578125)
+            elseif MyLevel >= 1450 then
+                Mon = "Water Fighter"
+                LevelQuest = 2
+                NameQuest = "ForgottenQuest"
+                NameMon = "Water Fighter"
+                CFrameQuest = CFrame.new(-3054.44458, 235.544281, -10142.8193, 0.990270376, -0, -0.13915664, 0, 1, -0, 0.13915664, 0, 0.990270376)
+                CFrameMon = CFrame.new(-3352.9013671875, 285.01556396484375, -10534.841796875)
+            end
+        elseif World3 then
+            if MyLevel == 1500 or MyLevel <= 1524 then
+                Mon = "Pirate Millionaire"
+                LevelQuest = 1
+                NameQuest = "PiratePortQuest"
+                NameMon = "Pirate Millionaire"
+                CFrameQuest = CFrame.new(-290.074677, 42.9034653, 5581.58984, 0.965929627, -0, -0.258804798, 0, 1, -0, 0.258804798, 0, 0.965929627)
+                CFrameMon = CFrame.new(-245.9963836669922, 47.30615234375, 5584.1005859375)
+            elseif MyLevel == 1525 or MyLevel <= 1574 then
+                Mon = "Pistol Billionaire"
+                LevelQuest = 2
+                NameQuest = "PiratePortQuest"
+                NameMon = "Pistol Billionaire"
+                CFrameQuest = CFrame.new(-290.074677, 42.9034653, 5581.58984, 0.965929627, -0, -0.258804798, 0, 1, -0, 0.258804798, 0, 0.965929627)
+                CFrameMon = CFrame.new(-187.3301544189453, 86.23987579345703, 6013.513671875)
+            elseif MyLevel == 1575 or MyLevel <= 1599 then
+                Mon = "Dragon Crew Warrior"
+                LevelQuest = 1
+                NameQuest = "AmazonQuest"
+                NameMon = "Dragon Crew Warrior"
+                CFrameQuest = CFrame.new(5832.83594, 51.6806107, -1101.51563, 0.898790359, -0, -0.438378751, 0, 1, -0, 0.438378751, 0, 0.898790359)
+                CFrameMon = CFrame.new(6141.140625, 51.35136413574219, -1340.738525390625)
+            elseif MyLevel == 1600 or MyLevel <= 1624 then 
+                Mon = "Dragon Crew Archer [Lv. 1600]"
+                NameQuest = "AmazonQuest"
+                LevelQuest = 2
+                NameMon = "Dragon Crew Archer"
+                CFrameQuest = CFrame.new(5833.1147460938, 51.60498046875, -1103.0693359375)
+                CFrameMon = CFrame.new(6616.41748046875, 441.7670593261719, 446.0469970703125)
+            elseif MyLevel == 1625 or MyLevel <= 1649 then
+                Mon = "Female Islander"
+                NameQuest = "AmazonQuest2"
+                LevelQuest = 1
+                NameMon = "Female Islander"
+                CFrameQuest = CFrame.new(5446.8793945313, 601.62945556641, 749.45672607422)
+                CFrameMon = CFrame.new(4685.25830078125, 735.8078002929688, 815.3425903320312)
+            elseif MyLevel == 1650 or MyLevel <= 1699 then 
+                Mon = "Giant Islander [Lv. 1650]"
+                NameQuest = "AmazonQuest2"
+                LevelQuest = 2
+                NameMon = "Giant Islander"
+                CFrameQuest = CFrame.new(5446.8793945313, 601.62945556641, 749.45672607422)
+                CFrameMon = CFrame.new(4729.09423828125, 590.436767578125, -36.97627639770508)
+            elseif MyLevel == 1700 or MyLevel <= 1724 then
+                Mon = "Marine Commodore"
+                LevelQuest = 1
+                NameQuest = "MarineTreeIsland"
+                NameMon = "Marine Commodore"
+                CFrameQuest = CFrame.new(2180.54126, 27.8156815, -6741.5498, -0.965929747, 0, 0.258804798, 0, 1, 0, -0.258804798, 0, -0.965929747)
+                CFrameMon = CFrame.new(2286.0078125, 73.13391876220703, -7159.80908203125)
+            elseif MyLevel == 1725 or MyLevel <= 1774 then
+                Mon = "Marine Rear Admiral [Lv. 1725]"
+                NameMon = "Marine Rear Admiral"
+                NameQuest = "MarineTreeIsland"
+                LevelQuest = 2
+                CFrameQuest = CFrame.new(2179.98828125, 28.731239318848, -6740.0551757813)
+                CFrameMon = CFrame.new(3656.773681640625, 160.52406311035156, -7001.5986328125)
+            elseif MyLevel == 1775 or MyLevel <= 1799 then
+                Mon = "Fishman Raider"
+                LevelQuest = 1
+                NameQuest = "DeepForestIsland3"
+                NameMon = "Fishman Raider"
+                CFrameQuest = CFrame.new(-10581.6563, 330.872955, -8761.18652, -0.882952213, 0, 0.469463557, 0, 1, 0, -0.469463557, 0, -0.882952213)   
+                CFrameMon = CFrame.new(-10407.5263671875, 331.76263427734375, -8368.5166015625)
+            elseif MyLevel == 1800 or MyLevel <= 1824 then
+                Mon = "Fishman Captain"
+                LevelQuest = 2
+                NameQuest = "DeepForestIsland3"
+                NameMon = "Fishman Captain"
+                CFrameQuest = CFrame.new(-10581.6563, 330.872955, -8761.18652, -0.882952213, 0, 0.469463557, 0, 1, 0, -0.469463557, 0, -0.882952213)   
+                CFrameMon = CFrame.new(-10994.701171875, 352.38140869140625, -9002.1103515625) 
+            elseif MyLevel == 1825 or MyLevel <= 1849 then
+                Mon = "Forest Pirate"
+                LevelQuest = 1
+                NameQuest = "DeepForestIsland"
+                NameMon = "Forest Pirate"
+                CFrameQuest = CFrame.new(-13234.04, 331.488495, -7625.40137, 0.707134247, -0, -0.707079291, 0, 1, -0, 0.707079291, 0, 0.707134247)
+                CFrameMon = CFrame.new(-13274.478515625, 332.3781433105469, -7769.58056640625)
+            elseif MyLevel == 1850 or MyLevel <= 1899 then
+                Mon = "Mythological Pirate"
+                LevelQuest = 2
+                NameQuest = "DeepForestIsland"
+                NameMon = "Mythological Pirate"
+                CFrameQuest = CFrame.new(-13234.04, 331.488495, -7625.40137, 0.707134247, -0, -0.707079291, 0, 1, -0, 0.707079291, 0, 0.707134247)   
+                CFrameMon = CFrame.new(-13680.607421875, 501.08154296875, -6991.189453125)
+            elseif MyLevel == 1900 or MyLevel <= 1924 then
+                Mon = "Jungle Pirate"
+                LevelQuest = 1
+                NameQuest = "DeepForestIsland2"
+                NameMon = "Jungle Pirate"
+                CFrameQuest = CFrame.new(-12680.3818, 389.971039, -9902.01953, -0.0871315002, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, -0.0871315002)
+                CFrameMon = CFrame.new(-12256.16015625, 331.73828125, -10485.8369140625)
+            elseif MyLevel == 1925 or MyLevel <= 1974 then
+                Mon = "Musketeer Pirate"
+                LevelQuest = 2
+                NameQuest = "DeepForestIsland2"
+                NameMon = "Musketeer Pirate"
+                CFrameQuest = CFrame.new(-12680.3818, 389.971039, -9902.01953, -0.0871315002, 0, 0.996196866, 0, 1, 0, -0.996196866, 0, -0.0871315002)
+                CFrameMon = CFrame.new(-13457.904296875, 391.545654296875, -9859.177734375)
+            elseif MyLevel == 1975 or MyLevel <= 1999 then
+                Mon = "Reborn Skeleton"
+                LevelQuest = 1
+                NameQuest = "HauntedQuest1"
+                NameMon = "Reborn Skeleton"
+                CFrameQuest = CFrame.new(-9479.2168, 141.215088, 5566.09277, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+                CFrameMon = CFrame.new(-8763.7236328125, 165.72299194335938, 6159.86181640625)
+            elseif MyLevel == 2000 or MyLevel <= 2024 then
+                Mon = "Living Zombie"
+                LevelQuest = 2
+                NameQuest = "HauntedQuest1"
+                NameMon = "Living Zombie"
+                CFrameQuest = CFrame.new(-9479.2168, 141.215088, 5566.09277, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+                CFrameMon = CFrame.new(-10144.1318359375, 138.62667846679688, 5838.0888671875)
+            elseif MyLevel == 2025 or MyLevel <= 2049 then
+                Mon = "Demonic Soul"
+                LevelQuest = 1
+                NameQuest = "HauntedQuest2"
+                NameMon = "Demonic Soul"
+                CFrameQuest = CFrame.new(-9516.99316, 172.017181, 6078.46533, 0, 0, -1, 0, 1, 0, 1, 0, 0) 
+                CFrameMon = CFrame.new(-9505.8720703125, 172.10482788085938, 6158.9931640625)
+            elseif MyLevel == 2050 or MyLevel <= 2074 then
+                Mon = "Posessed Mummy"
+                LevelQuest = 2
+                NameQuest = "HauntedQuest2"
+                NameMon = "Posessed Mummy"
+                CFrameQuest = CFrame.new(-9516.99316, 172.017181, 6078.46533, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+                CFrameMon = CFrame.new(-9582.0224609375, 6.251527309417725, 6205.478515625)
+            elseif MyLevel == 2075 or MyLevel <= 2099 then
+                Mon = "Peanut Scout"
+                LevelQuest = 1
+                NameQuest = "NutsIslandQuest"
+                NameMon = "Peanut Scout"
+                CFrameQuest = CFrame.new(-2104.3908691406, 38.104167938232, -10194.21875, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+                CFrameMon = CFrame.new(-2143.241943359375, 47.72198486328125, -10029.9951171875)
+            elseif MyLevel == 2100 or MyLevel <= 2124 then
+                Mon = "Peanut President"
+                LevelQuest = 2
+                NameQuest = "NutsIslandQuest"
+                NameMon = "Peanut President"
+                CFrameQuest = CFrame.new(-2104.3908691406, 38.104167938232, -10194.21875, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+                CFrameMon = CFrame.new(-1859.35400390625, 38.10316848754883, -10422.4296875)
+            elseif MyLevel == 2125 or MyLevel <= 2149 then
+                Mon = "Ice Cream Chef"
+                LevelQuest = 1
+                NameQuest = "IceCreamIslandQuest"
+                NameMon = "Ice Cream Chef"
+                CFrameQuest = CFrame.new(-820.64825439453, 65.819526672363, -10965.795898438, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+                CFrameMon = CFrame.new(-872.24658203125, 65.81957244873047, -10919.95703125)
+            elseif MyLevel == 2150 or MyLevel <= 2199 then
+                Mon = "Ice Cream Commander"
+                LevelQuest = 2
+                NameQuest = "IceCreamIslandQuest"
+                NameMon = "Ice Cream Commander"
+                CFrameQuest = CFrame.new(-820.64825439453, 65.819526672363, -10965.795898438, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+                CFrameMon = CFrame.new(-558.06103515625, 112.04895782470703, -11290.7744140625)
+            elseif MyLevel == 2200 or MyLevel <= 2224 then
+                Mon = "Cookie Crafter"
+                LevelQuest = 1
+                NameQuest = "CakeQuest1"
+                NameMon = "Cookie Crafter"
+                CFrameQuest = CFrame.new(-2021.32007, 37.7982254, -12028.7295, 0.957576931, -8.80302053e-08, 0.288177818, 6.9301187e-08, 1, 7.51931211e-08, -0.288177818, -5.2032135e-08, 0.957576931)
+                CFrameMon = CFrame.new(-2374.13671875, 37.79826354980469, -12125.30859375)
+            elseif MyLevel == 2225 or MyLevel <= 2249 then
+                Mon = "Cake Guard"
+                LevelQuest = 2
+                NameQuest = "CakeQuest1"
+                NameMon = "Cake Guard"
+                CFrameQuest = CFrame.new(-2021.32007, 37.7982254, -12028.7295, 0.957576931, -8.80302053e-08, 0.288177818, 6.9301187e-08, 1, 7.51931211e-08, -0.288177818, -5.2032135e-08, 0.957576931)
+                CFrameMon = CFrame.new(-1598.3070068359375, 43.773197174072266, -12244.5810546875)
+            elseif MyLevel == 2250 or MyLevel <= 2274 then
+                Mon = "Baking Staff"
+                LevelQuest = 1
+                NameQuest = "CakeQuest2"
+                NameMon = "Baking Staff"
+                CFrameQuest = CFrame.new(-1927.91602, 37.7981339, -12842.5391, -0.96804446, 4.22142143e-08, 0.250778586, 4.74911062e-08, 1, 1.49904711e-08, -0.250778586, 2.64211941e-08, -0.96804446)
+                CFrameMon = CFrame.new(-1887.8099365234375, 77.6185073852539, -12998.3505859375)
+            elseif MyLevel == 2275 or MyLevel <= 2299 then
+                Mon = "Head Baker"
+                LevelQuest = 2
+                NameQuest = "CakeQuest2"
+                NameMon = "Head Baker"
+                CFrameQuest = CFrame.new(-1927.91602, 37.7981339, -12842.5391, -0.96804446, 4.22142143e-08, 0.250778586, 4.74911062e-08, 1, 1.49904711e-08, -0.250778586, 2.64211941e-08, -0.96804446)
+                CFrameMon = CFrame.new(-2216.188232421875, 82.884521484375, -12869.2939453125)
+            elseif MyLevel == 2300 or MyLevel <= 2324 then
+                Mon = "Cocoa Warrior"
+                LevelQuest = 1
+                NameQuest = "ChocQuest1"
+                NameMon = "Cocoa Warrior"
+                CFrameQuest = CFrame.new(233.22836303710938, 29.876001358032227, -12201.2333984375)
+                CFrameMon = CFrame.new(-21.55328369140625, 80.57499694824219, -12352.3876953125)
+            elseif MyLevel == 2325 or MyLevel <= 2349 then
+                Mon = "Chocolate Bar Battler"
+                LevelQuest = 2
+                NameQuest = "ChocQuest1"
+                NameMon = "Chocolate Bar Battler"
+                CFrameQuest = CFrame.new(233.22836303710938, 29.876001358032227, -12201.2333984375)
+                CFrameMon = CFrame.new(582.590576171875, 77.18809509277344, -12463.162109375)
+            elseif MyLevel == 2350 or MyLevel <= 2374 then
+                Mon = "Sweet Thief"
+                LevelQuest = 1
+                NameQuest = "ChocQuest2"
+                NameMon = "Sweet Thief"
+                CFrameQuest = CFrame.new(150.5066375732422, 30.693693161010742, -12774.5029296875)
+                CFrameMon = CFrame.new(165.1884765625, 76.05885314941406, -12600.8369140625)
+            elseif MyLevel == 2375 or MyLevel <= 2399 then
+                Mon = "Candy Rebel"
+                LevelQuest = 2
+                NameQuest = "ChocQuest2"
+                NameMon = "Candy Rebel"
+                CFrameQuest = CFrame.new(150.5066375732422, 30.693693161010742, -12774.5029296875)
+                CFrameMon = CFrame.new(134.86563110351562, 77.2476806640625, -12876.5478515625)
+            elseif MyLevel == 2400 or MyLevel <= 2424 then
+                Mon = "Candy Pirate"
+                LevelQuest = 1
+                NameQuest = "CandyQuest1"
+                NameMon = "Candy Pirate"
+                CFrameQuest = CFrame.new(-1150.0400390625, 20.378934860229492, -14446.3349609375)
+                CFrameMon = CFrame.new(-1310.5003662109375, 26.016523361206055, -14562.404296875)
+            elseif MyLevel == 2425 or MyLevel <= 2449 then
+                Mon = "Snow Demon"
+                LevelQuest = 2
+                NameQuest = "CandyQuest1"
+                NameMon = "Snow Demon"
+                CFrameQuest = CFrame.new(-1150.0400390625, 20.378934860229492, -14446.3349609375)
+                CFrameMon = CFrame.new(-880.2006225585938, 71.24776458740234, -14538.609375)
+            elseif MyLevel == 2450 or MyLevel <= 2474 then
+                Mon = "Isle Outlaw"
+                LevelQuest = 1
+                NameQuest = "TikiQuest1"
+                NameMon = "Isle Outlaw"
+                CFrameQuest = CFrame.new(-16547.748046875, 61.13533401489258, -173.41360473632812)
+                CFrameMon = CFrame.new(-16442.814453125, 116.13899993896484, -264.4637756347656)
+            elseif MyLevel == 2475 or MyLevel <= 2499 then
+                Mon = "Island Boy"
+                LevelQuest = 2
+                NameQuest = "TikiQuest1"
+                NameMon = "Island Boy"
+                CFrameQuest = CFrame.new(-16547.748046875, 61.13533401489258, -173.41360473632812)
+                CFrameMon = CFrame.new(-16901.26171875, 84.06756591796875, -192.88906860351562)
+            elseif MyLevel == 2500 or MyLevel <= 2524 then
+                Mon = "Sun-kissed Warrior"
+                LevelQuest = 1
+                NameQuest = "TikiQuest2"
+                NameMon = "Sun-kissed Warrior"
+                CFrameQuest = CFrame.new(-16539.078125, 55.68632888793945, 1051.5738525390625)
+                CFrameMon = CFrame.new(-16349.8779296875, 92.0808334350586, 1123.4169921875)
+            elseif MyLevel == 2525 then
+                Mon = "Isle Champion"
+                LevelQuest = 2
+                NameQuest = "TikiQuest2"
+                NameMon = "Isle Champion"
+                CFrameQuest = CFrame.new(-16539.078125, 55.68632888793945, 1051.5738525390625)
+                CFrameMon = CFrame.new(-16347.4150390625, 92.09503936767578, 1122.335205078125)
+            end
+        end
+    end
     function Hop()
         local PlaceID = game.PlaceId
         local AllIDs = {}
@@ -3587,9 +4231,7 @@ end
     
 
 
-function TelePPlayer(P)
-	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = P
-end
+
 
     function Tween(Pos)
 
@@ -3614,39 +4256,7 @@ local lpc = r.Character.HumanoidRootPart.CFrame
 end 
 
     
-Type = 1
-spawn(function()
-    while wait(.1) do
-        if Type == 1 then
-            Pos = CFrame.new(0,PosY,0)
-		elseif Type == 2 then
-			Pos = CFrame.new(0,PosY,-30)
-		elseif Type == 3 then
-			Pos = CFrame.new(30,PosY,0)
-		elseif Type == 4 then
-			Pos = CFrame.new(0,PosY,30)	
-		elseif Type == 5 then
-			Pos = CFrame.new(-30,PosY,0)
-		elseif Type == 6 then
-			Pos = CFrame.new(0,35,0)
-        end
-        end
-    end)
 
-spawn(function()
-    while wait(.1) do
-        Type = 1
-        wait(0.5)
-        Type = 2
-        wait(0.5)
-        Type = 3
-        wait(0.5)
-        Type = 4
-        wait(0.5)
-        Type = 5
-        wait(0.5)
-    end
-end)
     
     spawn(function()
     game:GetService("RunService").Heartbeat:Connect(function()
@@ -3698,7 +4308,7 @@ end)
             end)
         end)
     end)
-    
+
     spawn(function()
         pcall(function()
             while wait() do
@@ -3718,9 +4328,6 @@ end)
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
     end
     
-    function TP3(pos)
-        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
-    end
     
     spawn(function()
         while wait() do
@@ -3813,98 +4420,6 @@ end)
 H:AddButton("Copy Youtube Domadic Hub",function()
 setclipboard("https://youtube.com/@nomadicoof789")
 end)
-
-H:AddLine()
-
-H:AddSeperator("UpdLog")
-H:AddLabel("Upd Time in Thailand")
-H:AddLabel("ตอนนี้บิดไปทําสคริป Makori Hub เกม ConDL Piece ละ ")
-H:AddLabel("I'm going to make Makori Hub for the game ConDL Piece Script")
-
-
-H:AddLabel("[+] Reduce Tween Speed | 5/4/2566|10:02")
-H:AddLabel("[+] Added Super Fast Attack | 8/4/2566|00:30")
-H:AddLabel("[+] Added Anti Afk | 8/4/2566|00:30")
-H:AddLabel("[+] New Ui | 20/4/2566|19:40")
-H:AddLabel("[+] Reduce Cpu | 20/4/2566|22:39")
-H:AddLabel("[+] Added Auto Click | 22/4/2566|12:16")
-H:AddLabel("[+] Fixed Bug Attack| 26/4/2566|19:45")
-H:AddLabel("[+] Auto Farm Nearest | 27/4/2566|09:52")
-H:AddLabel("[+] Anti Ban | 30/4/2566|11:35")
-H:AddLabel("[+] Fix Auto Farm| 30/4/2566|11:35")
-H:AddLabel("[+] New Ui| 30/4/2566|19:37")
-H:AddLabel("[+] Fix Auto Chest Can't Use| 30/4/2566|23:10")
-H:AddLabel("[+] Added Auto Cavander| 30/4/2566|23:12")
-H:AddLabel("[+] Added Auto Twin Hook| 30/4/2566|23:13")
-H:AddLabel("[+] Added Elite Spawan Check| 30/4/2566|23:12")
-H:AddLabel("[+] Added unlock Buso| 2/5/2566|19:25")
-H:AddLabel("[+] Added unlock Soru| 2/5/2566|19:25")
-H:AddLabel("[+] Added unlock Geppo| 2/5/2566|19:25")
-H:AddLabel("[+] Added Auto Buy All Abilities 2/5/2566|1:19")
-H:AddLabel("[+] Added Auto Buy All Sword 2/5/2566|1:20")
-H:AddLabel("[+] Fixed Kill Aura|11/5/2566|14:53")
-H:AddLabel("[+] Fixed Tween To Fruit|15/5/2566|15:59")
-H:AddLabel("[+] Fixed Auto Farm Nearest|27/5/2566|8:59")
-H:AddLabel("[+] Added Mangnet Auto farm Nearest|27/5/2566|8:59")
-H:AddLabel("[+] More Upd|31/5/2566|18:48")
-H:AddLabel("[+] New Ui|31/5/2566|18:48")
-H:AddLabel("[+] Tp Gear|31/5/2566|18:48")
-H:AddLabel("[+] Npc Teleport|31/5/2566|18:48")
-H:AddLabel("[+] Esp Npc|31/5/2566|18:48")
-H:AddLabel("[+] Race V4 Selection|31/5/2566|21:54")
-H:AddLabel("[+] Auto Farm Materials |7/6/2566|07:54")
-H:AddLabel("[+] Auto Farm SeaBeast |9/6/2566|20:53")
-H:AddLabel("[+] Fixes Auto Farm Bosses Not Working|11/6/2566|21:30")
-H:AddLabel("[+] Added Auto Farm Mob|12/6/2566|08:30")
-H:AddLabel("[+] Fixed Gui Cannot Be Closed|19/6/2566|18:23")
-H:AddLabel("[+] New Ui|23/6/2566|18:46")
-H:AddLabel("[+] Added Auto Use Awakening|30/6/2566|09:47")
-H:AddLabel("[+] Added Auto Raid Pirate|30/6/2566|10:01")
-H:AddLabel("[+] Added Menu Setting Farm Mode|30/6/2566|14:39")
-H:AddLabel("[+] Added Job Id|5/7/2566|20:19")
-H:AddLabel("[+] Added Pray Auto Try Luck|5/7/2566|20:20")
-H:AddLabel("[+] Added Auto Elite Player|6/7/2566|20:16")
-H:AddLabel("[+] New Ui|11/7/2566|11:27")
-H:AddLabel("[+] Auto Drive Boat|17/7/2566|11:27")
-H:AddLabel("[+] Aimbot Nearest|19/7/2566|20:43")
-H:AddLabel("[+] Auto ArenaTrainer|21/7/2566|19:44")
-H:AddLabel("[+] Ui Ripple|25/7/2566|20:01")
-H:AddLabel("[+] Auto Sword Mas|29/7/2566|10:03")
-H:AddLabel("[+] Newui|1/8/2566|--:--")
-H:AddLabel("[+] Esp Mystic Island|1/8/2566|16:11")
-H:AddLabel("[+] Auto Sea Baest Fully|1/8/2566|16:11")
-H:AddLabel("[+] Esp Advanced Fruit Dealer|2/8/2566|14:46")
-H:AddLabel("[+] Fix Farm Chest Bypass|5/8/2566|13:19")
-H:AddLabel("[+] Fix Bypasstp|17/8/2566|16:59")
-H:AddLabel("[+] Tp Set Position|22/8/2566|20:50")
-H:AddLabel("[+] Bypass Teleport Player|22/8/2566|20:50")
-H:AddLabel("[+] Fix Auto Playyer Hunter|22/8/2566|20:50")
-H:AddLabel("[+] Teleport To Boat Select|22/8/2566|20:50")
-H:AddLabel("[+] Spectate Boat |22/8/2566|20:52")
-H:AddLabel("[+] Bring Boat |22/8/2566|20:52")
-H:AddLabel("[+] Farm Sky |27/8/2566|20:48")
-H:AddLabel("[+] Look Moon |28/8/2566|17:30")
-H:AddLabel("[+] Auto Farm Race V4 |2/9/2566|12:23")
-H:AddLabel("[+] Fix Auto Saber |2/9/2566|12:23")
-H:AddLabel("[+] UnEquipWeapon |2/9/2566|12:23")
-H:AddLabel("[+] Highlight Character|14/9/2566|12:23")
-H:AddLabel("[+] Fruit Notification|14/9/2566|12:23")
-H:AddLabel("[+] Level Farm Mode|15/9/2566|21:11")
-H:AddLabel("[+] Disabled Damage|19/9/2566|21:25")
-H:AddLabel("[-] Fix Disable Notification|19/9/2566|21:25")
-H:AddLabel("[+] Lock Mastery|19/9/2566|21:25")
-H:AddLabel("[+] Check Mon|21/9/2566|17:18")
-H:AddLabel("[x] Remove Check Mon|30/9/2566|10:29")
-H:AddLabel("[+] Bypass Tp Elite Hunter|30/9/2566|10:30")
-H:AddLabel("[+] Auto Cake Price Add Quest|30/9/2566|10:30")
-H:AddLabel("[+] Auto Farm Bone Add Quest|30/9/2566|10:30")
-H:AddLabel("[+] Bring Player|30/9/2566|10:30")
-H:AddLabel("[+] Check LegendSword|2/10/2566|22:44")
-H:AddLabel("[x] Fix Check HakiDealer (Show Colors Sell )|2/10/2566|22:44")
-H:AddLabel("[x] Add Farm MasFruitBone&Cake |3/10/2566|22:44")
-H:AddLabel("[x] Fix Kill Aura  |7/10/2566|20:10")
-H:AddLabel("[+] Farm Chect Mirage |12/10/2566|20:10")
-H:AddLabel("[+] Update Auto Farm Level|22/10/2566|12:09")
 
 
 
@@ -4307,7 +4822,7 @@ spawn(function()
                         CheckQuest()
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameQuest.Position).Magnitude > 1500 then
-						BTP(CFrameQuest)
+						BInstancePos(CFrameQuest)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameQuest.Position).Magnitude < 1500 then
 						Tween(CFrameQuest)
 						end
@@ -4328,7 +4843,7 @@ spawn(function()
                                                 EquipWeapon(_G.SelectWeapon)
                                                 AutoHaki()                                            
                                                 PosMon = v.HumanoidRootPart.CFrame
-                                                Tween(v.HumanoidRootPart.CFrame * Pos)
+                                               Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                 v.HumanoidRootPart.CanCollide = false
                                                 v.Humanoid.WalkSpeed = 0
                                                 v.Head.CanCollide = false
@@ -4346,6 +4861,14 @@ spawn(function()
                             end
                         else
                             Tween(CFrameMon)
+                            wait(0.5)
+                            Tween(CFrameCheck1)
+                            wait(0.5)
+                            Tween(CFrameCheck2)
+                            wait(0.5)
+                            Tween(CFrameCheck3)
+                            wait(0.5)
+                            Tween(CFrameCheck4)
                             StartMagnet = false
                             if game:GetService("ReplicatedStorage"):FindFirstChild(Mon) then
                              Tween(game:GetService("ReplicatedStorage"):FindFirstChild(Mon).HumanoidRootPart.CFrame * CFrame.new(15,10,2))
@@ -4372,7 +4895,7 @@ spawn(function()
                         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest",NameQuest,LevelQuest)
                         if FarmMode == "Fast Mode" and _G.AutoFarm then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameMon.Position).Magnitude > 1500 then
-						BTP(CFrameMon)
+						BInstancePos(CFrameMon)
 						end
 					else
 						Tween(CFrameMon)
@@ -4388,7 +4911,7 @@ spawn(function()
                                                 EquipWeapon(_G.SelectWeapon)
                                                 AutoHaki()                                            
                                                 PosMon = v.HumanoidRootPart.CFrame
-                                                Tween(v.HumanoidRootPart.CFrame * Pos)
+                                                Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                 v.HumanoidRootPart.CanCollide = false
                                                 v.Humanoid.WalkSpeed = 0
                                                 v.Head.CanCollide = false
@@ -4512,7 +5035,7 @@ end
                                         SelectMag = true
                                         PosMon = v.HumanoidRootPart.CFrame
                                         v.HumanoidRootPart.Size = Vector3.new(80,80,80)                             
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.AutoFarmMob or not v.Parent or v.Humanoid.Health <= 0
@@ -4549,7 +5072,7 @@ spawn(function()
 			                	}
 			                	game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(args))
 			               	end
-			                Tween(v.HumanoidRootPart.CFrame * Pos)
+			                Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
 			                v.HumanoidRootPart.CanCollide = false
 			                Fastattack = true
 			                v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
@@ -4615,10 +5138,10 @@ spawn(function()
 						if (v.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 5000+_G.MagnitudeAdd then
 							repeat wait()
 								if game:GetService("Workspace"):FindFirstChild(v.Name) then
-									TP(v.CFrame)
+									InstancePos(v.CFrame)
 								end
 							until _G.AutoChestMirage == false or not v.Parent
-							TP(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
+							InstancePos(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
 							_G.MagnitudeAdd = _G.MagnitudeAdd+1500
 							break
 						end
@@ -4643,10 +5166,10 @@ spawn(function()
 						if (v.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 5000+_G.MagnitudeAdd then
 							repeat wait()
 								if game:GetService("Workspace"):FindFirstChild(v.Name) then
-									TP3(v.CFrame)
+									InstancePos(v.CFrame)
 								end
 							until AutoFarmChest == false or not v.Parent
-							Tween(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
+							InstancePos(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame)
 							_G.MagnitudeAdd = _G.MagnitudeAdd+1500
 							break
 						end
@@ -4700,7 +5223,7 @@ spawn(function()
             if Grab_Chest then
                 if T_P_H then
                     if game.Players.LocalPlayer.Backpack:FindFirstChild("Fist of Darkness") or game.Players.LocalPlayer.Character:FindFirstChild("Fist of Darkness") then
-                        TP(CFrame.new(-379.70889282227, 73.0458984375, 304.84692382813))
+                        InstancePos(CFrame.new(-379.70889282227, 73.0458984375, 304.84692382813))
                         H_F = true
 						game:GetService'VirtualUser':Button1Down(Vector2.new(1280,600))
                         wait(3)
@@ -4739,7 +5262,7 @@ spawn(function()
 						Chest_17500()
 						if _G.Chest_100 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_100.CFrame)
+								InstancePos(_G.Chest_100.CFrame)
 							until not _G.Chest_100.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4747,7 +5270,7 @@ spawn(function()
 							end
 						elseif _G.Chest_500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_500.CFrame)
+								InstancePos(_G.Chest_500.CFrame)
 							until not _G.Chest_500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4755,7 +5278,7 @@ spawn(function()
 							end
 						elseif _G.Chest_1000 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_1000.CFrame)
+								InstancePos(_G.Chest_1000.CFrame)
 							until not _G.Chest_1000.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4763,7 +5286,7 @@ spawn(function()
 							end
 						elseif _G.Chest_1500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_1500.CFrame)
+								InstancePos(_G.Chest_1500.CFrame)
 							until not _G.Chest_1500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4771,7 +5294,7 @@ spawn(function()
 							end
 						elseif _G.Chest_2000 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_2000.CFrame)
+								InstancePos(_G.Chest_2000.CFrame)
 							until not _G.Chest_2000.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4779,7 +5302,7 @@ spawn(function()
 							end
 						elseif _G.Chest_2500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_2500.CFrame)
+								InstancePos(_G.Chest_2500.CFrame)
 							until not _G.Chest_2500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4787,7 +5310,7 @@ spawn(function()
 							end
 						elseif _G.Chest_3500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_3500.CFrame)
+								InstancePos(_G.Chest_3500.CFrame)
 							until not _G.Chest_3500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4795,7 +5318,7 @@ spawn(function()
 							end
 						elseif _G.Chest_4500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_4500.CFrame)
+								InstancePos(_G.Chest_4500.CFrame)
 							until not _G.Chest_4500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4803,7 +5326,7 @@ spawn(function()
 							end
 						elseif _G.Chest_5500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_5500.CFrame)
+								InstancePos(_G.Chest_5500.CFrame)
 							until not _G.Chest_5500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4811,7 +5334,7 @@ spawn(function()
 							end
 						elseif _G.Chest_6500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_6500.CFrame)
+								InstancePos(_G.Chest_6500.CFrame)
 							until not _G.Chest_6500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4819,7 +5342,7 @@ spawn(function()
 							end
 						elseif _G.Chest_7500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_7500.CFrame)
+								InstancePos(_G.Chest_7500.CFrame)
 							until not _G.Chest_7500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4827,7 +5350,7 @@ spawn(function()
 							end
 						elseif _G.Chest_9500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_9500.CFrame)
+								InstancePos(_G.Chest_9500.CFrame)
 							until not _G.Chest_9500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4835,7 +5358,7 @@ spawn(function()
 							end
 						elseif _G.Chest_10500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_10500.CFrame)
+								InstancePos(_G.Chest_10500.CFrame)
 							until not _G.Chest_10500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4843,7 +5366,7 @@ spawn(function()
 							end
 						elseif _G.Chest_12500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_12500.CFrame)
+								InstancePos(_G.Chest_12500.CFrame)
 							until not _G.Chest_12500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4851,7 +5374,7 @@ spawn(function()
 							end
 						elseif _G.Chest_15500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_15500.CFrame)
+								InstancePos(_G.Chest_15500.CFrame)
 							until not _G.Chest_15500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4859,7 +5382,7 @@ spawn(function()
 							end
 						elseif _G.Chest_17500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_17500.CFrame)
+								InstancePos(_G.Chest_17500.CFrame)
 							until not _G.Chest_17500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4902,7 +5425,7 @@ spawn(function()
 						Chest_17500()
 						if _G.Chest_100 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_100.CFrame)
+								InstancePos(_G.Chest_100.CFrame)
 							until not _G.Chest_100.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4910,7 +5433,7 @@ spawn(function()
 							end
 						elseif _G.Chest_500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_500.CFrame)
+								InstancePos(_G.Chest_500.CFrame)
 							until not _G.Chest_500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4918,7 +5441,7 @@ spawn(function()
 							end
 						elseif _G.Chest_1000 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_1000.CFrame)
+								InstancePos(_G.Chest_1000.CFrame)
 							until not _G.Chest_1000.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4926,7 +5449,7 @@ spawn(function()
 							end
 						elseif _G.Chest_1500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_1500.CFrame)
+								InstancePos(_G.Chest_1500.CFrame)
 							until not _G.Chest_1500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4934,7 +5457,7 @@ spawn(function()
 							end
 						elseif _G.Chest_2000 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_2000.CFrame)
+								InstancePos(_G.Chest_2000.CFrame)
 							until not _G.Chest_2000.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4942,7 +5465,7 @@ spawn(function()
 							end
 						elseif _G.Chest_2500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_2500.CFrame)
+								InstancePos(_G.Chest_2500.CFrame)
 							until not _G.Chest_2500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4950,7 +5473,7 @@ spawn(function()
 							end
 						elseif _G.Chest_3500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_3500.CFrame)
+								InstancePos(_G.Chest_3500.CFrame)
 							until not _G.Chest_3500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4958,7 +5481,7 @@ spawn(function()
 							end
 						elseif _G.Chest_4500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_4500.CFrame)
+								InstancePos(_G.Chest_4500.CFrame)
 							until not _G.Chest_4500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4966,7 +5489,7 @@ spawn(function()
 							end
 						elseif _G.Chest_5500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_5500.CFrame)
+								InstancePos(_G.Chest_5500.CFrame)
 							until not _G.Chest_5500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4974,7 +5497,7 @@ spawn(function()
 							end
 						elseif _G.Chest_6500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_6500.CFrame)
+								InstancePos(_G.Chest_6500.CFrame)
 							until not _G.Chest_6500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4982,7 +5505,7 @@ spawn(function()
 							end
 						elseif _G.Chest_7500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_7500.CFrame)
+								InstancePos(_G.Chest_7500.CFrame)
 							until not _G.Chest_7500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4990,7 +5513,7 @@ spawn(function()
 							end
 						elseif _G.Chest_9500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_9500.CFrame)
+								InstancePos(_G.Chest_9500.CFrame)
 							until not _G.Chest_9500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -4998,7 +5521,7 @@ spawn(function()
 							end
 						elseif _G.Chest_10500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_10500.CFrame)
+								InstancePos(_G.Chest_10500.CFrame)
 							until not _G.Chest_10500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -5006,7 +5529,7 @@ spawn(function()
 							end
 						elseif _G.Chest_12500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_12500.CFrame)
+								InstancePos(_G.Chest_12500.CFrame)
 							until not _G.Chest_12500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -5014,7 +5537,7 @@ spawn(function()
 							end
 						elseif _G.Chest_15500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_15500.CFrame)
+								InstancePos(_G.Chest_15500.CFrame)
 							until not _G.Chest_15500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -5022,7 +5545,7 @@ spawn(function()
 							end
 						elseif _G.Chest_17500 ~= nil then
 							repeat wait(.3)
-								TP(_G.Chest_17500.CFrame)
+								InstancePos(_G.Chest_17500.CFrame)
 							until not _G.Chest_17500.Parent or not Grab_Chest
 							if Grab_Chest then
 								K_CH = K_CH + 1
@@ -5277,7 +5800,7 @@ end)
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -5305,7 +5828,7 @@ end)
                                                     v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                                     MagnetDought = true
                                                     PosMonDoughtOpenDoor = v.HumanoidRootPart.CFrame
-                                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                     game:GetService("VirtualUser"):CaptureController()
                                                     game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                                 until not _G.AutoDoughtBoss or not v.Parent or v.Humanoid.Health <= 0 or game:GetService("Workspace").Map.CakeLoaf.BigMirror.Other.Transparency == 0 or game:GetService("ReplicatedStorage"):FindFirstChild("Cake Prince [Lv. 2300] [Raid Boss]") or game:GetService("Workspace").Enemies:FindFirstChild("Cake Prince [Lv. 2300] [Raid Boss]") or KillMob == 0
@@ -5315,7 +5838,7 @@ end)
                                 else
                                 if BypassTP then
                                 if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakePos.Position).Magnitude > 1500 then
-						        BTP(CakePos)
+						        BInstancePos(CakePos)
 						        elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakePos.Position).Magnitude < 1500 then
 						        Tween(CakePos)
 						        end
@@ -5373,7 +5896,7 @@ spawn(function()
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -5404,7 +5927,7 @@ spawn(function()
                         MagnetDought = false
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakeQuestPos.Position).Magnitude > 1500 then
-						BTP(CakeQuestPos)
+						BInstancePos(CakeQuestPos)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakeQuestPos.Position).Magnitude < 1500 then
 						Tween(CakeQuestPos)
 						end
@@ -5424,7 +5947,7 @@ spawn(function()
                                                 EquipWeapon(_G.SelectWeapon)
                                                 AutoHaki()                                            
                                                 PosMonCake = v.HumanoidRootPart.CFrame
-                                                Tween(v.HumanoidRootPart.CFrame * Pos)
+                                               Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                 v.HumanoidRootPart.CanCollide = false
                                                 v.Humanoid.WalkSpeed = 0
                                                 v.Head.CanCollide = false
@@ -5470,7 +5993,7 @@ spawn(function()
                         UseSkill = false
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakeQuestPos.Position).Magnitude > 1500 then
-						BTP(CakeQuestPos)
+						BInstancePos(CakeQuestPos)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakeQuestPos.Position).Magnitude < 1500 then
 						Tween(CakeQuestPos)
 						end
@@ -5502,7 +6025,7 @@ spawn(function()
                                                     UseSkillKub = false 
                                                     AutoHaki()
                                                     EquipWeapon(_G.SelectWeapon)
-                                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                     v.HumanoidRootPart.CanCollide = false
                                                     v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                                     PosMonCake = v.HumanoidRootPart.CFrame
@@ -5569,7 +6092,7 @@ spawn(function()
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -5641,7 +6164,7 @@ spawn(function()
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(80,80,80)                             
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
@@ -5953,7 +6476,7 @@ end)
     
     
     spawn(function()
-        while task.wait(0.175) do
+        while task.wait(0.15) do
     if _G.FastAttack then
               pcall(function()
                   AttackNoCD() 
@@ -6083,17 +6606,8 @@ end)
       end
     end)
     
-    Main:AddSeperator("Setting Farm Mode")
-
-    Main:AddLabel("Distance X Right Vector")
-    Main:AddLabel("Distance Y Up Vector")
-    Main:AddLabel("Distance Z Behind Vector")
 
 
-    PosY = 35
-    Main:AddSlider("Pos Y Distance Farm ",0,50,35,function(value)
-    PosY = value
-    end)
     
 
     Main:AddSeperator("Misc Setting Mastery")
@@ -6162,7 +6676,7 @@ end)
                                                             v.Head.CanCollide = false
                                                             v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                                             v.HumanoidRootPart.CFrame = OldCFrameSecond
-                                                            Tween(v.HumanoidRootPart.CFrame * Pos)
+                                                           Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                             game:GetService("VirtualUser"):CaptureController()
                                                             game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                                             sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
@@ -6214,7 +6728,7 @@ end)
                                             repeat task.wait()
                                                 AutoHaki()
                                                 EquipWeapon(_G.SelectWeapon)
-                                                Tween(v.HumanoidRootPart.CFrame * Pos)
+                                               Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                 v.HumanoidRootPart.CFrame = OldCFrameThird
                                                 v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                                 v.HumanoidRootPart.CanCollide = false
@@ -6781,7 +7295,7 @@ local MaterialsPos1 = CFrame.new(-507.7895202636719, 72.99479675292969, -126.456
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not Radioactive or not v.Parent or v.Humanoid.Health <= 0
@@ -6792,7 +7306,7 @@ local MaterialsPos1 = CFrame.new(-507.7895202636719, 72.99479675292969, -126.456
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos1.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos1)
+			        BInstancePos(MaterialsPos1)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos1.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos1)
 					end
@@ -6838,7 +7352,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.Makori_gay or not v.Parent or v.Humanoid.Health <= 0
@@ -6849,7 +7363,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos2.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos2)
+			        BInstancePos(MaterialsPos2)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos2.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos2)
 					end
@@ -6895,7 +7409,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.Umm or not v.Parent or v.Humanoid.Health <= 0
@@ -6906,7 +7420,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos3.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos3)
+			        BInstancePos(MaterialsPos3)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos3.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos3)
 					end
@@ -6945,7 +7459,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.Umm or not v.Parent or v.Humanoid.Health <= 0
@@ -6956,7 +7470,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos4.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos4)
+			        BInstancePos(MaterialsPos4)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos4.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos4)
 					end
@@ -7002,7 +7516,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.Auto_Wing or not v.Parent or v.Humanoid.Health <= 0
@@ -7013,7 +7527,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos5.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos5)
+			        BInstancePos(MaterialsPos5)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos5.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos5)
 					end
@@ -7059,7 +7573,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.Leather or not v.Parent or v.Humanoid.Health <= 0
@@ -7070,7 +7584,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos6.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos6)
+			        BInstancePos(MaterialsPos6)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos6.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos6)
 					end
@@ -7109,7 +7623,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.Leather or not v.Parent or v.Humanoid.Health <= 0
@@ -7120,7 +7634,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos7.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos7)
+			        BInstancePos(MaterialsPos7)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos7.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos7)
 					end
@@ -7159,7 +7673,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.Leather or not v.Parent or v.Humanoid.Health <= 0
@@ -7170,7 +7684,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos8.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos8)
+			        BInstancePos(MaterialsPos8)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos8.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos8)
 					end
@@ -7216,7 +7730,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not Scrap or not v.Parent or v.Humanoid.Health <= 0
@@ -7227,7 +7741,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos9.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos9)
+			        BInstancePos(MaterialsPos9)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos9.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos9)
 					end
@@ -7266,7 +7780,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not Scrap or not v.Parent or v.Humanoid.Health <= 0
@@ -7277,7 +7791,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos10.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos10)
+			        BInstancePos(MaterialsPos10)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos10.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos10)
 					end
@@ -7316,7 +7830,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not Scrap or not v.Parent or v.Humanoid.Health <= 0
@@ -7327,7 +7841,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos11.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos11)
+			        BInstancePos(MaterialsPos11)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos11.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos11)
 					end
@@ -7373,7 +7887,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not Cocoafarm or not v.Parent or v.Humanoid.Health <= 0
@@ -7384,7 +7898,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos12.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos12)
+			        BInstancePos(MaterialsPos12)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos12.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos12)
 					end
@@ -7430,7 +7944,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not Dragon_Scale or not v.Parent or v.Humanoid.Health <= 0
@@ -7441,7 +7955,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos13.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos13)
+			        BInstancePos(MaterialsPos13)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos13.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos13)
 					end
@@ -7487,7 +8001,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not Gunpowder or not v.Parent or v.Humanoid.Health <= 0
@@ -7498,7 +8012,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos14.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos14)
+			        BInstancePos(MaterialsPos14)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos14.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos14)
 					end
@@ -7544,7 +8058,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not Fish or not v.Parent or v.Humanoid.Health <= 0
@@ -7555,7 +8069,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos15.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos15)
+			        BInstancePos(MaterialsPos15)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos15.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos15)
 					end
@@ -7601,7 +8115,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         MakoriGayMag = true
                                         PosGay = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not MiniHee or not v.Parent or v.Humanoid.Health <= 0
@@ -7612,7 +8126,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos16.Position).Magnitude > 1500 then
-			        BTP(MaterialsPos16)
+			        BInstancePos(MaterialsPos16)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos16.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos16)
 					end
@@ -7730,7 +8244,7 @@ end
                                                     UseSkill = false 
                                                     AutoHaki()
                                                     EquipWeapon(_G.SelectWeapon)
-                                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                     v.HumanoidRootPart.CanCollide = false
                                                     v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                                     PosMonMasteryFruit = v.HumanoidRootPart.CFrame
@@ -8151,7 +8665,7 @@ end
                                                     v.HumanoidRootPart.CanCollide = false
                                                     v.Head.CanCollide = false               
                                                     v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                     game:GetService'VirtualUser':CaptureController()
                                                     game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
                                                 end
@@ -8232,7 +8746,7 @@ end
                                                 HealthMin = v.Humanoid.MaxHealth * _G.Kill_At/100
                                                 if v.Humanoid.Health <= HealthMin then                                                
                                                     EquipWeaponSword()
-                                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                     v.Humanoid.WalkSpeed = 0
                                                     v.HumanoidRootPart.CanCollide = false
                                                     v.HumanoidRootPart.Size = Vector3.new(50,50,50)
@@ -8246,7 +8760,7 @@ end
                                                     v.HumanoidRootPart.CanCollide = false
                                                     v.Head.CanCollide = false               
                                                     v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                     game:GetService'VirtualUser':CaptureController()
                                                     game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
                                                 end
@@ -8310,7 +8824,7 @@ end
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -8321,7 +8835,7 @@ end
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BigMomPos.Position).Magnitude > 1500 then
-			        BTP(BigMomPos)
+			        BInstancePos(BigMomPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BigMomPos.Position).Magnitude < 1500 then
 				    Tween(BigMomPos)
 					end
@@ -8701,10 +9215,10 @@ spawn(function()
                         if v:FindFirstChild("HazeESP") then
                             repeat wait()
                                 if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 2000 then
-                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                 else
                                     EquipWeapon(Sword)
-                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                     v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
                                     v.HumanoidRootPart.Transparency = 1
                                     v.Humanoid.JumpPower = 0
@@ -8751,7 +9265,7 @@ spawn(function()
                                         if v.Humanoid.Health > 0 then
                                             repeat wait()
                                                 EquipWeapon(Sword)
-                                                Tween(v.HumanoidRootPart.CFrame * Pos)
+                                               Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                 v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
                                                 v.HumanoidRootPart.Transparency = 1
                                                 v.Humanoid.JumpPower = 0
@@ -8830,7 +9344,7 @@ spawn(function()
                                 if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 2000 then
                                     repeat wait()
                                         EquipWeapon(Sword)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
                                         v.HumanoidRootPart.Transparency = 1
                                         v.Humanoid.JumpPower = 0
@@ -8866,7 +9380,7 @@ spawn(function()
                                     if v.Humanoid.Health > 0 then
                                         repeat wait()
                                             EquipWeapon(Sword)
-                                            Tween(v.HumanoidRootPart.CFrame * Pos)
+                                           Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                             v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
                                             v.HumanoidRootPart.Transparency = 1
                                             v.Humanoid.JumpPower = 0
@@ -8895,7 +9409,7 @@ spawn(function()
                                         if v.Humanoid.Health > 0 then
                                             repeat wait()
                                                 EquipWeapon(Sword)
-                                                Tween(v.HumanoidRootPart.CFrame * Pos)
+                                               Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                 v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
                                                 v.HumanoidRootPart.Transparency = 1
                                                 v.Humanoid.JumpPower = 0
@@ -8962,7 +9476,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -8973,7 +9487,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TushitaPos.Position).Magnitude > 1500 then
-			        BTP(TushitaPos)
+			        BInstancePos(TushitaPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TushitaPos.Position).Magnitude < 1500 then
 				    Tween(TushitaPos)
 					end
@@ -9021,7 +9535,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -9032,7 +9546,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CavandisPos.Position).Magnitude > 1500 then
-			        BTP(CavandisPos)
+			        BInstancePos(CavandisPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CavandisPos.Position).Magnitude < 1500 then
 				    Tween(CavandisPos)
 					end
@@ -9075,7 +9589,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                                     EquipWeapon(_G.SelectWeapon)
                                     v.HumanoidRootPart.CanCollide = false
                                     v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
-                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                     Click()
                                 until v.Humanoid.Health <= 0 or not v.Parent or not _G.RaidPirate
                             end
@@ -9085,7 +9599,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     UnEquipWeapon(_G.SelectWeapon)
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameBoss.Position).Magnitude > 1500 then
-			        BTP(CFrameBoss)
+			        BInstancePos(CFrameBoss)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameBoss.Position).Magnitude < 1500 then
 				    Tween(CFrameBoss)
 					end
@@ -9122,7 +9636,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -9133,7 +9647,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - ElephantPos.Position).Magnitude > 1500 then
-			        BTP(ElephantPos)
+			        BInstancePos(ElephantPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - ElephantPos.Position).Magnitude < 1500 then
 				    Tween(ElephantPos)
 					end
@@ -9198,7 +9712,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - Elite.Position).Magnitude > 1500 then
-						BTP(Elite)
+						BInstancePos(Elite)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - Elite.Position).Magnitude < 1500 then
 						Tween(Elite)
 						end
@@ -9220,7 +9734,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                                                 v.HumanoidRootPart.CanCollide = false
                                                 v.Humanoid.WalkSpeed = 0
                                                 v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                                Tween(v.HumanoidRootPart.CFrame * Pos)
+                                               Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                 game:GetService("VirtualUser"):CaptureController()
                                                 game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                                 sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
@@ -9290,7 +9804,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
 							else
 							if BypassTP then
                             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - GGPos.Position).Magnitude > 1500 then
-			                BTP(GGPos)
+			                BInstancePos(GGPos)
 				            elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - GGPos.Position).Magnitude < 1500 then
 				            Tween(GGPos)
 					        end
@@ -9391,7 +9905,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                                         EquipWeapon(_G.SelectWeapon)
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280, 670),workspace.CurrentCamera.CFrame)
                                     end)
@@ -9401,7 +9915,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - AdminPos.Position).Magnitude > 1500 then
-			        BTP(AdminPos)
+			        BInstancePos(AdminPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - AdminPos.Position).Magnitude < 1500 then
 				    Tween(AdminPos)
 					end
@@ -9731,7 +10245,7 @@ M:AddToggle('Ennable Hop Sea Event Farm', false, function(value)
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -9742,7 +10256,7 @@ M:AddToggle('Ennable Hop Sea Event Farm', false, function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TridentPos.Position).Magnitude > 1500 then
-			        BTP(TridentPos)
+			        BInstancePos(TridentPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TridentPos.Position).Magnitude < 1500 then
 				    Tween(TridentPos)
 					end
@@ -9790,7 +10304,7 @@ M:AddToggle('Ennable Hop Sea Event Farm', false, function(value)
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -9801,7 +10315,7 @@ M:AddToggle('Ennable Hop Sea Event Farm', false, function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TridentPos.Position).Magnitude > 1500 then
-			        BTP(TridentPos)
+			        BInstancePos(TridentPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TridentPos.Position).Magnitude < 1500 then
 				    Tween(TridentPos)
 					end
@@ -9849,7 +10363,7 @@ M:AddToggle('Ennable Hop Sea Event Farm', false, function(value)
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -9860,7 +10374,7 @@ M:AddToggle('Ennable Hop Sea Event Farm', false, function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - GayMakPos.Position).Magnitude > 1500 then
-			        BTP(GayMakPos)
+			        BInstancePos(GayMakPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - GayMakPos.Position).Magnitude < 1500 then
 				    Tween(GayMakPos)
 					end
@@ -9908,7 +10422,7 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -9919,7 +10433,7 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - PolePos.Position).Magnitude > 1500 then
-			        BTP(PolePos)
+			        BInstancePos(PolePos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - PolePos.Position).Magnitude < 1500 then
 				    Tween(PolePos)
 					end
@@ -9961,7 +10475,7 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
                                         EquipWeapon(_G.SelectWeapon)
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280, 670))
                                         sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
@@ -10009,7 +10523,7 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
@@ -10020,7 +10534,7 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - SharkPos.Position).Magnitude > 1500 then
-			        BTP(SharkPos)
+			        BInstancePos(SharkPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - SharkPos.Position).Magnitude < 1500 then
 				    Tween(SharkPos)
 					end
@@ -10092,7 +10606,7 @@ end)
                                         v.Head.CanCollide = false 
                                         StartMagnetBoneMon = true
                                         PosMonBone = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not _G.Auto_Bone or not v.Parent or v.Humanoid.Health <= 0
@@ -10102,7 +10616,7 @@ end)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BonePos.Position).Magnitude > 1500 then
-			        BTP(BonePos)
+			        BInstancePos(BonePos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BonePos.Position).Magnitude < 1500 then
 				    Tween(BonePos)
 					end
@@ -10144,7 +10658,7 @@ end)
                         StartMagnetBoneMon = false
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BoneQuestPos.Position).Magnitude > 1500 then
-						BTP(BoneQuestPos)
+						BInstancePos(BoneQuestPos)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BoneQuestPos.Position).Magnitude < 1500 then
 						Tween(BoneQuestPos)
 						end
@@ -10164,7 +10678,7 @@ end)
                                                 EquipWeapon(_G.SelectWeapon)
                                                 AutoHaki()                                            
                                                 PosMonBone = v.HumanoidRootPart.CFrame
-                                                Tween(v.HumanoidRootPart.CFrame * Pos)
+                                               Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                 v.HumanoidRootPart.CanCollide = false
                                                 v.Humanoid.WalkSpeed = 0
                                                 v.Head.CanCollide = false
@@ -10207,7 +10721,7 @@ end)
                         UseSkillKub = false
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BoneQuestPos.Position).Magnitude > 1500 then
-						BTP(BoneQuestPos)
+						BInstancePos(BoneQuestPos)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BoneQuestPos.Position).Magnitude < 1500 then
 						Tween(BoneQuestPos)
 						end
@@ -10238,7 +10752,7 @@ end)
                                                     UseSkillKub = false 
                                                     AutoHaki()
                                                     EquipWeapon(_G.SelectWeapon)
-                                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                     v.HumanoidRootPart.CanCollide = false
                                                     v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                                     PosMonBone = v.HumanoidRootPart.CFrame
@@ -10501,7 +11015,7 @@ end)
                                                         v.HumanoidRootPart.CanCollide = false
                                                         v.Humanoid.WalkSpeed = 0
                                                         v.HumanoidRootPart.Size = Vector3.new(80,80,80)                             
-                                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                         game:GetService("VirtualUser"):CaptureController()
                                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                                         sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
@@ -10531,7 +11045,7 @@ end)
                                     if v.Name == "Saber Expert" then
                                         repeat task.wait()
                                             EquipWeapon(_G.SelectWeapon)
-                                            Tween(v.HumanoidRootPart.CFrame * Pos)
+                                           Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                             v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
                                             v.HumanoidRootPart.Transparency = 1
                                             v.Humanoid.JumpPower = 0
@@ -10676,7 +11190,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                                 EquipWeapon(_G.SelectWeapon)
                                                 AutoHaki()
                                                 v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                                Tween(v.HumanoidRootPart.CFrame * Pos)
+                                               Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                 v.HumanoidRootPart.CanCollide = false
                                                 game:GetService'VirtualUser':CaptureController()
                                                 game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
@@ -10710,7 +11224,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                                 AutoHaki()
                                                 v.HumanoidRootPart.CanCollide = false
                                                 v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                                Tween(v.HumanoidRootPart.CFrame * Pos)
+                                               Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                 v.HumanoidRootPart.CanCollide = false
                                                 v.HumanoidRootPart.CFrame = OldCFrameElephant
                                                 game:GetService("VirtualUser"):CaptureController()
@@ -10760,7 +11274,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                     OldCFrameRainbow = v.HumanoidRootPart.CFrame
                                     repeat task.wait()
                                         EquipWeapon(_G.SelectWeapon)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.CFrame = OldCFrameRainbow
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
@@ -10780,7 +11294,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                     OldCFrameRainbow = v.HumanoidRootPart.CFrame
                                     repeat task.wait()
                                         EquipWeapon(_G.SelectWeapon)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.CFrame = OldCFrameRainbow
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
@@ -10800,7 +11314,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                     OldCFrameRainbow = v.HumanoidRootPart.CFrame
                                     repeat task.wait()
                                         EquipWeapon(_G.SelectWeapon)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                         v.HumanoidRootPart.CFrame = OldCFrameRainbow
@@ -10820,7 +11334,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                     OldCFrameRainbow = v.HumanoidRootPart.CFrame
                                     repeat task.wait()
                                         EquipWeapon(_G.SelectWeapon)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                         v.HumanoidRootPart.CFrame = OldCFrameRainbow
@@ -10840,7 +11354,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                     OldCFrameRainbow = v.HumanoidRootPart.CFrame
                                     repeat task.wait()
                                         EquipWeapon(_G.SelectWeapon)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                         v.HumanoidRootPart.CFrame = OldCFrameRainbow
@@ -10931,7 +11445,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                     v.HumanoidRootPart.CanCollide = false
                                     v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                     RengokuMon = v.HumanoidRootPart.CFrame
-                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                     game:GetService'VirtualUser':CaptureController()
                                     game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
                                     StartRengokuMagnet = true
@@ -10967,7 +11481,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Head.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService'VirtualUser':CaptureController()
                                         game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
                                         EctoplasmMon = v.HumanoidRootPart.CFrame
@@ -11039,7 +11553,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                                 repeat task.wait()
                                                     AutoHaki()
                                                     EquipWeapon(_G.SelectWeapon)
-                                                    Tween(v.HumanoidRootPart.CFrame * Pos)
+                                                   Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                                     v.HumanoidRootPart.CanCollide = false
                                                     v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                                     game:GetService("VirtualUser"):CaptureController()
@@ -11087,7 +11601,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                                 v.HumanoidRootPart.Transparency = 1
                                                 v.HumanoidRootPart.CanCollide = false
                                                 v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                                Tween(v.HumanoidRootPart.CFrame * Pos)													
+                                               Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))													
                                                 PosMonBarto =  v.HumanoidRootPart.CFrame
                                                 game:GetService'VirtualUser':CaptureController()
                                                 game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
@@ -11119,7 +11633,7 @@ ColorHaki = M:AddLabel("เช็กแปป...พบว่า Koben แจก�
                                         v.HumanoidRootPart.CanCollide = false
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
                                         v.HumanoidRootPart.CFrame = OldCFrameBartlio
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService'VirtualUser':CaptureController()
                                         game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
                                         sethiddenproperty(game:GetService("Players").LocalPlayer,"SimulationRadius",math.huge)
@@ -11931,7 +12445,7 @@ spawn(function()
                                         v.Head.CanCollide = false 
                                         FarmMag = true
                                         PosGG = v.HumanoidRootPart.CFrame
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                     until not StardFarm or not v.Parent or v.Humanoid.Health <= 0
@@ -13246,7 +13760,7 @@ end)
                                         v.HumanoidRootPart.CanCollide = false
                                         v.Humanoid.WalkSpeed = 0
                                         v.HumanoidRootPart.Size = Vector3.new(50,50,50)
-                                        Tween(v.HumanoidRootPart.CFrame * Pos)
+                                       Tween(v.HumanoidRootPart.CFrame * CFrame.new(0,35,-30))
                                         game:GetService("VirtualUser"):CaptureController()
                                         game:GetService("VirtualUser"):Button1Down(Vector2.new(1280,672))
                                         sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
