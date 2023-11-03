@@ -4820,6 +4820,7 @@ spawn(function()
                     if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
                         StartMagnet = false
                         CheckQuest()
+                        CheckMonPos() 
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameQuest.Position).Magnitude > 1500 then
 						BTP(CFrameQuest)
@@ -4834,6 +4835,7 @@ spawn(function()
                         end
                     elseif game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == true then
                         CheckQuest()
+                        CheckMonPos() 
                         if game:GetService("Workspace").Enemies:FindFirstChild(Mon) then
                             for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
                                 if v:FindFirstChild("HumanoidRootPart") and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 0 then
@@ -4860,6 +4862,7 @@ spawn(function()
                                 end
                             end
                         else
+                            CheckMonPos() 
                             Tween(CFrameCheck1)
                             wait(0.5)
                             Tween(CFrameCheck2)
