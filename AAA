@@ -4822,7 +4822,7 @@ spawn(function()
                         CheckQuest()
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameQuest.Position).Magnitude > 1500 then
-						BInstancePos(CFrameQuest)
+						BTP(CFrameQuest)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameQuest.Position).Magnitude < 1500 then
 						Tween(CFrameQuest)
 						end
@@ -4860,8 +4860,6 @@ spawn(function()
                                 end
                             end
                         else
-                            Tween(CFrameMon)
-                            wait(0.5)
                             Tween(CFrameCheck1)
                             wait(0.5)
                             Tween(CFrameCheck2)
@@ -4869,6 +4867,8 @@ spawn(function()
                             Tween(CFrameCheck3)
                             wait(0.5)
                             Tween(CFrameCheck4)
+                            wait(0.5)
+                            Tween(CFrameMon)
                             StartMagnet = false
                             if game:GetService("ReplicatedStorage"):FindFirstChild(Mon) then
                              Tween(game:GetService("ReplicatedStorage"):FindFirstChild(Mon).HumanoidRootPart.CFrame * CFrame.new(15,10,2))
@@ -4895,7 +4895,7 @@ spawn(function()
                         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("StartQuest",NameQuest,LevelQuest)
                         if FarmMode == "Fast Mode" and _G.AutoFarm then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameMon.Position).Magnitude > 1500 then
-						BInstancePos(CFrameMon)
+						BTP(CFrameMon)
 						end
 					else
 						Tween(CFrameMon)
@@ -5838,7 +5838,7 @@ end)
                                 else
                                 if BypassTP then
                                 if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakePos.Position).Magnitude > 1500 then
-						        BInstancePos(CakePos)
+						        BTP(CakePos)
 						        elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakePos.Position).Magnitude < 1500 then
 						        Tween(CakePos)
 						        end
@@ -5927,7 +5927,7 @@ spawn(function()
                         MagnetDought = false
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakeQuestPos.Position).Magnitude > 1500 then
-						BInstancePos(CakeQuestPos)
+						BTP(CakeQuestPos)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakeQuestPos.Position).Magnitude < 1500 then
 						Tween(CakeQuestPos)
 						end
@@ -5993,7 +5993,7 @@ spawn(function()
                         UseSkill = false
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakeQuestPos.Position).Magnitude > 1500 then
-						BInstancePos(CakeQuestPos)
+						BTP(CakeQuestPos)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CakeQuestPos.Position).Magnitude < 1500 then
 						Tween(CakeQuestPos)
 						end
@@ -7306,7 +7306,7 @@ local MaterialsPos1 = CFrame.new(-507.7895202636719, 72.99479675292969, -126.456
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos1.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos1)
+			        BTP(MaterialsPos1)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos1.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos1)
 					end
@@ -7363,7 +7363,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos2.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos2)
+			        BTP(MaterialsPos2)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos2.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos2)
 					end
@@ -7420,7 +7420,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos3.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos3)
+			        BTP(MaterialsPos3)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos3.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos3)
 					end
@@ -7470,7 +7470,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos4.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos4)
+			        BTP(MaterialsPos4)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos4.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos4)
 					end
@@ -7527,7 +7527,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos5.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos5)
+			        BTP(MaterialsPos5)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos5.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos5)
 					end
@@ -7584,7 +7584,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos6.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos6)
+			        BTP(MaterialsPos6)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos6.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos6)
 					end
@@ -7634,7 +7634,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos7.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos7)
+			        BTP(MaterialsPos7)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos7.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos7)
 					end
@@ -7684,7 +7684,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos8.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos8)
+			        BTP(MaterialsPos8)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos8.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos8)
 					end
@@ -7741,7 +7741,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos9.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos9)
+			        BTP(MaterialsPos9)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos9.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos9)
 					end
@@ -7791,7 +7791,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos10.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos10)
+			        BTP(MaterialsPos10)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos10.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos10)
 					end
@@ -7841,7 +7841,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos11.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos11)
+			        BTP(MaterialsPos11)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos11.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos11)
 					end
@@ -7898,7 +7898,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos12.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos12)
+			        BTP(MaterialsPos12)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos12.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos12)
 					end
@@ -7955,7 +7955,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos13.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos13)
+			        BTP(MaterialsPos13)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos13.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos13)
 					end
@@ -8012,7 +8012,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos14.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos14)
+			        BTP(MaterialsPos14)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos14.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos14)
 					end
@@ -8069,7 +8069,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos15.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos15)
+			        BTP(MaterialsPos15)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos15.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos15)
 					end
@@ -8126,7 +8126,7 @@ spawn(function()
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos16.Position).Magnitude > 1500 then
-			        BInstancePos(MaterialsPos16)
+			        BTP(MaterialsPos16)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - MaterialsPos16.Position).Magnitude < 1500 then
 				    Tween(MaterialsPos16)
 					end
@@ -8835,7 +8835,7 @@ end
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BigMomPos.Position).Magnitude > 1500 then
-			        BInstancePos(BigMomPos)
+			        BTP(BigMomPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BigMomPos.Position).Magnitude < 1500 then
 				    Tween(BigMomPos)
 					end
@@ -9487,7 +9487,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TushitaPos.Position).Magnitude > 1500 then
-			        BInstancePos(TushitaPos)
+			        BTP(TushitaPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TushitaPos.Position).Magnitude < 1500 then
 				    Tween(TushitaPos)
 					end
@@ -9546,7 +9546,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CavandisPos.Position).Magnitude > 1500 then
-			        BInstancePos(CavandisPos)
+			        BTP(CavandisPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CavandisPos.Position).Magnitude < 1500 then
 				    Tween(CavandisPos)
 					end
@@ -9599,7 +9599,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     UnEquipWeapon(_G.SelectWeapon)
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameBoss.Position).Magnitude > 1500 then
-			        BInstancePos(CFrameBoss)
+			        BTP(CFrameBoss)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - CFrameBoss.Position).Magnitude < 1500 then
 				    Tween(CFrameBoss)
 					end
@@ -9647,7 +9647,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - ElephantPos.Position).Magnitude > 1500 then
-			        BInstancePos(ElephantPos)
+			        BTP(ElephantPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - ElephantPos.Position).Magnitude < 1500 then
 				    Tween(ElephantPos)
 					end
@@ -9712,7 +9712,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     if game:GetService("Players").LocalPlayer.PlayerGui.Main.Quest.Visible == false then
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - Elite.Position).Magnitude > 1500 then
-						BInstancePos(Elite)
+						BTP(Elite)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - Elite.Position).Magnitude < 1500 then
 						Tween(Elite)
 						end
@@ -9804,7 +9804,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
 							else
 							if BypassTP then
                             if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - GGPos.Position).Magnitude > 1500 then
-			                BInstancePos(GGPos)
+			                BTP(GGPos)
 				            elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - GGPos.Position).Magnitude < 1500 then
 				            Tween(GGPos)
 					        end
@@ -9915,7 +9915,7 @@ M:AddToggle("Auto Tushita", _G.Autotushita,function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - AdminPos.Position).Magnitude > 1500 then
-			        BInstancePos(AdminPos)
+			        BTP(AdminPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - AdminPos.Position).Magnitude < 1500 then
 				    Tween(AdminPos)
 					end
@@ -10256,7 +10256,7 @@ M:AddToggle('Ennable Hop Sea Event Farm', false, function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TridentPos.Position).Magnitude > 1500 then
-			        BInstancePos(TridentPos)
+			        BTP(TridentPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TridentPos.Position).Magnitude < 1500 then
 				    Tween(TridentPos)
 					end
@@ -10315,7 +10315,7 @@ M:AddToggle('Ennable Hop Sea Event Farm', false, function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TridentPos.Position).Magnitude > 1500 then
-			        BInstancePos(TridentPos)
+			        BTP(TridentPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - TridentPos.Position).Magnitude < 1500 then
 				    Tween(TridentPos)
 					end
@@ -10374,7 +10374,7 @@ M:AddToggle('Ennable Hop Sea Event Farm', false, function(value)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - GayMakPos.Position).Magnitude > 1500 then
-			        BInstancePos(GayMakPos)
+			        BTP(GayMakPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - GayMakPos.Position).Magnitude < 1500 then
 				    Tween(GayMakPos)
 					end
@@ -10433,7 +10433,7 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - PolePos.Position).Magnitude > 1500 then
-			        BInstancePos(PolePos)
+			        BTP(PolePos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - PolePos.Position).Magnitude < 1500 then
 				    Tween(PolePos)
 					end
@@ -10534,7 +10534,7 @@ local PolePos = CFrame.new(-7748.0185546875, 5606.80615234375, -2305.89868164062
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - SharkPos.Position).Magnitude > 1500 then
-			        BInstancePos(SharkPos)
+			        BTP(SharkPos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - SharkPos.Position).Magnitude < 1500 then
 				    Tween(SharkPos)
 					end
@@ -10616,7 +10616,7 @@ end)
                     else
                     if BypassTP then
                     if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BonePos.Position).Magnitude > 1500 then
-			        BInstancePos(BonePos)
+			        BTP(BonePos)
 				    elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BonePos.Position).Magnitude < 1500 then
 				    Tween(BonePos)
 					end
@@ -10658,7 +10658,7 @@ end)
                         StartMagnetBoneMon = false
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BoneQuestPos.Position).Magnitude > 1500 then
-						BInstancePos(BoneQuestPos)
+						BTP(BoneQuestPos)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BoneQuestPos.Position).Magnitude < 1500 then
 						Tween(BoneQuestPos)
 						end
@@ -10721,7 +10721,7 @@ end)
                         UseSkillKub = false
                         if BypassTP then
                         if (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BoneQuestPos.Position).Magnitude > 1500 then
-						BInstancePos(BoneQuestPos)
+						BTP(BoneQuestPos)
 						elseif (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - BoneQuestPos.Position).Magnitude < 1500 then
 						Tween(BoneQuestPos)
 						end
